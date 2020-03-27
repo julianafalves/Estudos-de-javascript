@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Voto</title>
+</head>
+<body>
+    <h1>Voto</h1>
+    <input type="text" name='idade' id=idade>
+    <input type="button" value="verifica" onclick="verifica()">
+    <div id=result> </div>
+    <script>
+        function verifica() {
+            var idadetxt = document.getElementById('idade')
+            var idade = Number(idadetxt.value)
+            var result = document.querySelector('div#result')
+            if (idade>=18) {
+                result.innerHTML = 'Você deve votar'
+            }else{
+                if(idade >=16){
+                    result.innerHTML = 'Você pode votar'
+                }else{
+                    result.innerHTML='Você não pode votar!'
+                }
+            }
+        }
+    </script>
+</body>
+</html>
