@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto final</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Análise da sala de aula</h1>
+    </header>
+    <section>
+        <div>
+            <p id="inserir">Inserindo nota</p>
+            <p>RA  :
+                <input type="text" placeholder="Digite o RA" id="ratxt">
+            </p>
+            <p>Nota Prova 1: 
+                <input type="number" id="p1txt">
+            </p>
+            <p>Nota Prova 2:
+                <input type="number" id="p2txt">
+            </p>
+            <p>
+                <input type="button" value="Inserir" onclick="inserir()">
+            </p>
+            <p id="procurar"> Procurando Média</p>
+            <p>
+                <input type="text" placeholder="RA para encontrar média" id="ratxt1">
+                <input type="button" value="Média do aluno" onclick="mediaaluno()">
+            </p>
+            <p>
+                <input type="button" value="Média geral" onclick="mediageral()">
+            </p>
+            <p>
+                <input type="button" value="Mostre tudo" onclick="imprima()">
+            </p>
+        </div>
+        <div id="res">
+
+        </div>
+    </section>
+    <footer>
+        <p>&copy Juliana</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
